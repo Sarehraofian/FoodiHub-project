@@ -1,0 +1,225 @@
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.text-color {
+  color: #ff6f00;
+  text-shadow: 1px 1px 3px rgba(230, 154, 13, 0.637);
+}
+
+.backgroundColor {
+  background-color: #ff9800;
+  transition: all 0.3 ease;
+  color: white;
+}
+.backgroundColor:hover {
+  background-color: #ff6f00;
+  color: aliceblue;
+}
+.navcolor {
+  background-color: #ff9800;
+  font-family: "Playwrite AU SA", cursive;
+}
+.navcolor {
+  color: white;
+}
+.navcolor:hover {
+  color: #ff6f00;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.color {
+  color: #ff9800;
+}
+.color:hover {
+  color: #ff6f00;
+}
+.custom-btn {
+  font-family: "Playwrite AU SA", cursive;
+  background-color: #ff9800;
+  border: none;
+  transition: all 0.3s ease;
+  color: white;
+}
+.custom-btn:hover {
+  background-color: #ff6f00;
+  transition: scale(1.05);
+  color: white;
+}
+.card-smooth {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-smooth:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+.option {
+  background-color: #ff6f00;
+}
+#pizzaCarousel {
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: -50px;
+}
+
+.carousel-control-next {
+  right: -50px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.intro-section {
+  background: linear-gradient(to right, #fff8e1, #ffe0b2);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.intro-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6f00;
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 700px;
+  margin: 20px auto;
+
+  color: #333;
+}
+
+.short-info {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+.short-info h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #d35400;
+}
+.short-info p {
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #444;
+}
+
+.intro-section .btn-warning {
+  background-color: #ff9800;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.intro-section .btn-warning:hover {
+  background-color: #f17633;
+  color: #fff;
+}
+.hero-text {
+  pointer-events: none;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.footer {
+  background-color: #ff9800;
+  font-family: "Playwrite AU SA", cursive;
+  flex-shrink: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #ffd700;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.customer-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #f4a261;
+  margin-bottom: 10px;
+}
+.feedback-card {
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.feedback-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 40%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+  .carousel .card {
+    position: relative;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30%;
+  }
+
+  
+}

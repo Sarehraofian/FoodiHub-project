@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodi Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navcolor sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold navcolor" href="#">Foodie Hub</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link navcolor" href="index.html"
+                ><i class="fas fa-home me-2"></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navcolor" href="restuarant.html"
+                ><i class="fas fa-utensils me-2"></i>Restaurants</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navcolor" href="about.html"
+                ><i class="fas fa-info-circle me-2"></i>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navcolor" href="contact.html"
+                ><i class="fas fa-envelope me-2"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <ul class="nav nav-tabs justify-content-center mb-4" role="tablist">
+        <li class="nav-item">
+          <button
+            class="active btn btn-outline-warning me-3"
+            onmouseover="this.classList.replace('btn-outline-warning', 'btn-warning')"
+            onmouseout="this.classList.replace('btn-warning', 'btn-outline-warning')"
+            data-bs-toggle="tab"
+            data-bs-target="#food"
+          >
+            🍽️ Foods
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            class="btn btn-outline-success me-2"
+            onmouseover="this.classList.replace('btn-outline-success', 'btn-success')"
+            onmouseout="this.classList.replace('btn-success', 'btn-outline-success')"
+            data-bs-toggle="tab"
+            data-bs-target="#drinks"
+          >
+            🥤 Drinks
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            class="btn btn-outline-primary me-2"
+            onmouseover="this.classList.replace('btn-outline-primary', 'btn-primary')"
+            onmouseout="this.classList.replace('btn-primary', 'btn-outline-primary')"
+            data-bs-toggle="tab"
+            data-bs-target="#desserts"
+          >
+            🍰 Desserts
+          </button>
+        </li>
+      </ul>
+
+      <!-- محتوای تب‌ها -->
+      <div class="tab-content">
+        <!-- بخش غذا -->
+        <div class="tab-pane fade show active" id="food">
+          <div
+            id="foodCarousel"
+            class="carousel slide"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1: Pizza -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <h3 class="text-color">Types of Pizza</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div
+                      class="card h-100 shadow d-flex flex-column card-smooth"
+                    >
+                      <img
+                        src="images/margarit pizza.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Margherita Pizza</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Tomato sauce, mozzarella,
+                          basil, olive oil, salt.
+                        </p>
+                        <br />
+                        <p><strong>Price: </strong></p>
+                        <ul class="list-unstyled">
+                          <li>Large: $12</li>
+                          <li>Medium: $9</li>
+                          <li>Small: $6</li>
+                        </ul>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/Pepperoni_Pizza.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pepperoni Pizza</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Tomato sauce, mozzarella,
+                          pepperoni slices, oregano.
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <ul class="list-unstyled">
+                          <li>Large: $12</li>
+                          <li>Medium: $9</li>
+                          <li>Small: $6</li>
+                        </ul>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/BBQ pizza.jfif"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">BBQ Chicken Pizza</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> BBQ sauce, grilled chicken,
+                          red onion, mozzarella, cilantro.
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <ul class="list-unstyled">
+                          <li>Large: $12</li>
+                          <li>Medium: $9</li>
+                          <li>Small: $6</li>
+                        </ul>
+                        <a href="contact.html"
+                          ><span
+                            class="badge bg-danger"
+                            title="currently unavailable"
+                            style="cursor: not-allowed"
+                            >Un Available</span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/Hawaiian-Piza.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Hawaiian Pizza</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Tomato sauce, mozzarella, ham,
+                          pineapple chunks
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <ul class="list-unstyled">
+                          <li>Large: $12</li>
+                          <li>Medium: $9</li>
+                          <li>Small: $6</li>
+                        </ul>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add 3 more cards here -->
+                </div>
+              </div>
+
+              <!-- Slide 2: Burger -->
+              <div class="carousel-item">
+                <div class="row">
+                  <h3 class="text-color">Types of burger</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/cheeseburger.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cheeseburger</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Beef patty, cheddar cheese,
+                          lettuce, tomato, pickles, onions, ketchup, mustard,
+                          burger bun.
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$12.99</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/bbq burger.jpeg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Bacon BBQ Burger</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Beef patty, crispy bacon, BBQ
+                          sauce, cheddar cheese, fried onions, lettuce, burger
+                          bun.
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$6</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/chikenburger.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Chicken Burger</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Grilled or crispy chicken
+                          breast, mayo, lettuce, tomato, pickles, cheese
+                          (optional), sesame
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$12</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/vegan burger.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Veggie Burge</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Plant-based patty (e.g., beans
+                          or lentils), lettuce, tomato, avocado, grilled
+                          mushrooms, vegan mayo.
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$7</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Polu -->
+              <div class="carousel-item">
+                <div class="row">
+                  <h3 class="text-color">Types of Chalaw</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/chalaw gardan.jfif"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                          Challow with Lamb Neck (Rice with Braised Lamb Neck)
+                        </h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Basmati rice , Water, Salt,
+                          Cooking oil or ghee, Ingredients for Lamb Neck
+                          (Braised): Lamb neck pieces Onion (sliced or chopped)
+                          Garlic Tomato paste (optional) Turmeric Black pepper
+                          Salt Ground cinnamon (optional, for extra flavor)
+                          Water or broth Cooking oil.
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$15</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/chalaw kobida.png"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                          Challow with Koobideh Kebab (Rice with Ground Meat
+                          Skewers)
+                        </h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Basmati rice, Salt ,Water,
+                          Cooking oil or ghee, Ingredients for Koobideh Kebab:
+                          Ground lamb or beef (or a mix of both), Grated onion
+                          (well-drained), Salt, Black pepper, Turmeric
+                          (optional), Sumac (for serving) ,Metal skewers,
+                          Charcoal or gas grill
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$17</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/chalaw kabab.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Challow Joojeh Kebab</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em>
+
+                          Plain white basmati rice, Chicken pieces (usually
+                          breast or thigh, boneless), Yogurt, Lemon juice ,Onion
+                          juice or grated onion, Saffron or turmeric Salt and
+                          pepper Garlic (optional) Skewers (for grilling)
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$20</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/qabuli.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Qabuli Pulao</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Basmati rice Lamb (usually
+                          shank or shoulder), Carrots (julienned), Raisins,
+                          Onions, Garlic, Cardamom, Cumin ,Black pepper, Salt,
+                          Cooking oil or ghee Water Optional: slivered almonds
+                          or pistachios
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$30</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--slide 4-->
+
+              <div class="carousel-item">
+                <div class="row">
+                  <h3 class="text-color">Types of Kabab</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/teka kabab.jpeg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Tikka Kabab</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Cubed lamb or beef Yogurt
+                          Garlic, ginger Lemon juice Salt, red chili, turmeric
+                          Grilled over charcoal
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$14</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/barg kabab.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Barg Kabab</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Thin slices of lamb/veal loin
+                          Olive oil or butter Brewed saffron Onion juice Salt
+                          and pepper
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$10</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/joojeh-kabab.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Jujeh Kabab</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em>
+                          Chicken pieces (with or without bone) Yogurt and lemon
+                          juice Onion, saffron Salt, pepper, and turmeric
+                          Grilled on skewers
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$9</p>
+                        <a href="contact.html"
+                          ><span
+                            class="badge bg-danger"
+                            title="currently unavailable"
+                            style="cursor: not-allowed"
+                            >Un Available</span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/kabab-koobideh-recipe.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Kabab Koobideh</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Ground lamb or beef Grated
+                          onion Salt and pepper Sometimes turmeric
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$7</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--slide 5-->
+
+              <div class="carousel-item">
+                <div class="row">
+                  <h3 class="text-color">Types of Sandwich</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/chiken sandwich.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Chicken Sandwich</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Bread or bun Grilled or crispy
+                          chicken breast Lettuce Tomato Mayonnaise or sauce
+                          (optional)
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$10</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/club sandwich.jfif"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Club Sandwich</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Toasted bread (usually 3
+                          layers) Sliced chicken or turkey Crispy bacon Lettuce
+                          Tomato Mayonnaise
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$12</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/Veggie_Hummus_Sandwich_.jpeg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Veggie Sandwich</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em>
+                          Whole grain or multigrain bread Lettuce, tomato,
+                          cucumber, onion Avocado or hummus Cheese (optional)
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$9</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/Cheese-Ham-FB.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ham & Cheese Sandwich</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Bread or bun Sliced ham Cheese
+                          (Swiss, cheddar, etc.) Butter or mustard (optional)
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$12.99</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#foodCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="fa-solid fa-chevron-left fa-2x p-2 backgroundColor rounded-circle"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#foodCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="fa-solid fa-chevron-right fa-2x p-2 backgroundColor rounded-circle"
+              ></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- بخش نوشیدنی -->
+        <div class="tab-pane fade" id="drinks">
+          <div
+            id="drinkCarousel"
+            class="carousel slide"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1: Hot Drinks -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <h3 class="text-color">Hot Drinks</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/damnoosh.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Herbal Tea (Damnoosh)</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$14</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/black tea.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Green Tea</h5>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$12</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/blacktea.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Black Tea</h5>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$10</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/Gol-e-Mohamadi-Damask-Rose-Tea.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                          Gol-e Mohamadi (Damask Rose Tea)
+                        </h5>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$6</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Cold Drinks -->
+              <div class="carousel-item">
+                <div class="row">
+                  <h3 class="text-color">Cold Drink</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/Lemonad.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Limonad</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Fresh lemon juice Cold water
+                          Sugar Ice cubes Mint leaves (optional)
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$8</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/strawberrysmoothi.jfif"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Strawberry Milkshake</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Fresh strawberries Cold milk
+                          Sugar or honey Ice cream (optional) Ice cubes
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$12</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img src="images/dooq.jfif" alt="" class="card-img-top" />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                          Mint Yogurt Drink (Ayran or Dough)
+                        </h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Cold plain yogurt Water Salt
+                          Fresh mint or dried mint Ice cubes
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$12</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/orange juice.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Orange Juice</h5>
+                        <p class="card-text flex-grow-1">
+                          <em>Ingrideants : </em> Cold brewed coffee Ice cubes
+                          Milk or cream Sugar or syrup (optional)
+                        </p>
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted">$11</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Fizzy Drinks -->
+              <div class="carousel-item">
+                <div class="row">
+                  <h3 class="text-color">Fizzy Drinks</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/energy-drinks.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Energy Drinks</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$13</p>
+                        <a href="contact.html"
+                          ><span
+                            class="badge bg-danger"
+                            title="currently unavailable"
+                            style="cursor: not-allowed"
+                            >Un Available</span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/sparklingwate.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sparkling Water</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$11</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img src="images/pepsi.jpg" alt="" class="card-img-top" />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pepsi</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$10</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/kokakola.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Coca-Cola</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$14</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--slide 4-->
+              <div class="carousel-item">
+                <div class="row">
+                  <h3 class="text-color">Types of hot coffee</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/experso.jfif"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Experso</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$12</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/copochino.jfif"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cappuchino</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$10</p>
+                        <a href="contact.html"
+                          ><span
+                            class="badge bg-danger"
+                            title="currently unavailable"
+                            style="cursor: not-allowed"
+                            >Un Available</span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img src="images/moca.jpg" alt="" class="card-img-top" />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mocha</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$13</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/latte.avif"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Latte</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$12.5</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--slide 5-->
+              <div class="carousel-item">
+                <div class="row">
+                  <h3 class="text-color">Types of Cold Coffee</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/ice coffee.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Iced Coffee</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$12.99</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/cold brew.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cold Brew</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$11</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/iced latte.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Iced Latte</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$9</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/frappe.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Frapi</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$11.9</p>
+                        <a href="contact.html"
+                          ><span
+                            class="badge bg-danger"
+                            title="currently unavailable"
+                            style="cursor: not-allowed"
+                            >unavailable
+                          </span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#drinkCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="fa-solid fa-chevron-left fa-2x p-2 backgroundColor rounded-circle"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#drinkCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="fa-solid fa-chevron-right fa-2x p-2 backgroundColor rounded-circle"
+              ></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- بخش دسر -->
+        <div class="tab-pane fade" id="desserts">
+          <div
+            id="dessertCarousel"
+            class="carousel slide"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1: Afghan/Iranian Desserts -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <h3 class="text-color">Types of Desserts</h3>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/chocolate cake.jfif"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Chocklate Cake</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$11</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/cheese cake.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cheese Cake</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$14</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/ice cream.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ice Cream</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$4</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/browni.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Browni</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$9</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Turkish/Global -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/donate.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Donate</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$9</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/Baklava.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Baklava</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$7</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img src="images/firni.jpg" alt="" class="card-img-top" />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Firni</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$8</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card h-100 d-flex flex-column card-smooth">
+                      <img
+                        src="images/zulbia and bamia.webp"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Zulbia and Bamia</h5>
+
+                        <p><strong>Price: </strong></p>
+                        <p class="text-muted flex-grow-1">$9</p>
+                        <a href="contact.html"
+                          ><span class="badge navcolor">Available</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#dessertCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="fa-solid fa-chevron-left fa-2x p-2 backgroundColor rounded-circle"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#dessertCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="fa-solid fa-chevron-right fa-2x p-2 backgroundColor rounded-circle"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer text-white pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold footer links">
+              Foodie Hub
+            </h5>
+            <p>Delicious food delivered fast. Taste the joy in every bite!</p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold footer links">
+              Quick Links
+            </h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Home</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Menu</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Order</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Contact</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold .footer links">
+              Contact
+            </h5>
+            <p><i class="fas fa-home mr-3"></i> Kabul, Afghanistan</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@foodiehub.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +93 700 123 456</p>
+          </div>
+
+          <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold footer links">
+              Follow Us
+            </h5>
+            <a href="#" class="text-white me-4"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a href="#" class="text-white me-4"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+            <a href="#" class="text-white me-4"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a href="#" class="text-white me-4"
+              ><i class="fab fa-linkedin fa-lg"></i
+            ></a>
+          </div>
+        </div>
+
+        <hr class="mb-4" />
+
+        
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
